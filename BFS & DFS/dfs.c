@@ -30,7 +30,7 @@ void main() {
     printf("\n Graph is connected\n");
   }
   else {
-    printf("\n Graph is not connected\n);
+    printf("\n Graph is not connected\n");
   }
   getch();
 }
@@ -52,3 +52,22 @@ int dfs(int src) {
 
   return 1;
 }
+
+/* Output: 
+Enter the no. of nodes: 4
+Enter the adjacency matrix:
+0 1 1 0
+0 0 0 0
+0 0 0 1
+0 1 0 0
+Enter the source node: 1
+Graph is connected
+Enter the no. of nodes: 4
+Enter the adjacency matrix:
+0 1 1 0
+0 0 0 0
+0 1 0 0
+0 0 0 0
+Enter the source node: 1
+Graph is not connected
+*/
