@@ -57,3 +57,22 @@ void bfs(int src) {
   }
 }
 
+/* Output:
+Enter the no. of nodes: 6
+Enter the adjacency matrix:
+0 1 1 1 0 0
+0 0 0 0 1 0
+0 0 0 0 1 1
+0 0 0 0 0 1
+0 0 0 0 0 0
+0 0 0 0 1 0
+Enter the source node: 1
+Node 1 is reachable
+Node 2 is reachable
+Node 3 is reachable
+Node 4 is reachable
+Node 5 is reachable
+Node 6 is reachable
+*/
+
+
