@@ -39,7 +39,7 @@ void printArray(int array[], int size) {
 }
 
 int main() {
-  int a[15000],n, i,j,ch, temp;
+  int data[15000], n, i, j, ch, temp;
   clock_t start,end;
   while(1) {
     printf("\n1:For manual entry of N value and array elements");
@@ -52,21 +52,21 @@ int main() {
         scanf("%d",&n);
         printf("\nEnter array elements: ");
 
-        for(i=0;i<n;i++) {
-            scanf("%d",&a[i]);
+        for(i = 0; i < n; i++) {
+            scanf("%d", &data[i]);
         }
-        start=clock();
+        start = clock();
         printf("Unsorted Array\n");
         printArray(data, n);
         
-        partition(a,0,n-1);
+        partition(data, 0, n-1);
         end = clock();
         printf("\nSorted array is: ");
-        quickSort(a, 0, n-1);
+        quickSort(data, 0, n-1);
         printArray(data, n);
 
-        for(i=0;i<n;i++)
-            printf("%d\t",a[i]);
+        for(i = 0; i < n; i++)
+            printf("%d\t", data[i]);
 
         printf("\n Time taken to sort %d numbers is %f Secs",n, (((double)(end-start))/CLOCKS_PER_SEC));
         break;
@@ -74,12 +74,12 @@ int main() {
         case 2:
             n = 500;
             while(n <= 14500) {
-            for(i=0;i<n;i++) {
+            for(i = 0; i < n; i++) {
             //a[i]=random(1000);
-                a[i] = n - i;
+                data[i] = n - i;
             }
             start = clock();
-            partition(a, 0, n - 1);
+            partition(data, 0, n - 1);
                 
             //Dummy loop to create delay
             for(j = 0; j < 500000; j++) { 
@@ -94,7 +94,7 @@ int main() {
         case 3: exit(0);
     }
 getchar();
-}
+
 }
   
 }
