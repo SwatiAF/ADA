@@ -13,7 +13,7 @@ void source_removal(int n, int a[10][10]) {
     indeg[i]=sum;
   }
   top = -1;
-  for(i=0;i&lt;n;i++) {
+  for(i = 0; i < n; i++) {
     if(indeg[i] == 0) {
       s[++top] = i;
     }
@@ -31,7 +31,7 @@ void source_removal(int n, int a[10][10]) {
     }
   }
 
-  for(i = 0;i < n; i++) {
+  for(i = 0; i < n; i++) {
     printf("%d\n", t[i]);
   }
 }
