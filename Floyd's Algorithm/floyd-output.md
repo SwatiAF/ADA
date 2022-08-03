@@ -1,4 +1,4 @@
-
+```
 Enter the num of vertices: 	4
 
 Enter the cost matrix: 
@@ -16,3 +16,4 @@ All pair shortest path matrix is:
 
 6	16	9	10	
 
+```
