@@ -1,4 +1,4 @@
-
+```
 Enter the num of items: 	4
 
 Enter the weight of the each item: 
@@ -24,3 +24,4 @@ The output is:
 The optimal solution is 37
 The solution vector is: 
 1	1	0	1	
+```
