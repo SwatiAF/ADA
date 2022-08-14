@@ -37,7 +37,7 @@ void main() {
   int n;
   clrscr();
   printf("Enter the number of Queens: \n");
-  scanf("%d, &n);
+  scanf("%d", &n);
   nqueens(n);
   getch();
 }
