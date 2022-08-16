@@ -12,7 +12,7 @@ void warshal(int p[10][10],int n) {
     p[i][j] = max(p[i][j], p[i][k] && p[k][j]);
 }
 
-int max(int a,int b) {                                                       ;
+int max(int a,int b) {                                                       
   if(a > b)
    return(a);
   else
